@@ -1,0 +1,61 @@
+digraph diagram {
+  rankdir=BT;
+
+  // {rank = same; TalkingAnimal; SwimmerAnimal;}
+
+  "Mammal" [style=filled, fillcolor=gold]
+    "Mammal" -> "Animal";
+
+  "Wolf" [style=filled, fillcolor=darkorange]
+    "Wolf" -> "Mammal";
+
+  "Parrot" [style=filled, fillcolor=darkorange]
+    "Parrot" -> "Mammal";
+    "Parrot" -> "TalkingAnimal";
+    "Parrot" -> "Flyer";
+
+  "Dog" [style=filled, fillcolor=darkorange]
+    "Dog" -> "Wolf";
+
+  "Insect" [style=filled, fillcolor=gold]
+    "Insect" -> "Animal";
+
+  "TalkingAnimal" [style=filled, fillcolor=cadetblue]
+    "TalkingAnimal" -> "Animal";
+
+  "SwimmerAnimal" [style=filled, fillcolor=cadetblue]
+    "SwimmerAnimal" -> "Animal";
+
+  "JumperAnimal" [style=filled, fillcolor=cadetblue]
+    "JumperAnimal" -> "Animal";
+
+  "Frog" [style=filled, fillcolor=darkorange]
+    "Frog" -> "Amphibian";
+
+  "Human" [style=filled, fillcolor=darkorange]
+    "Human" -> "Mammal";
+    "Human" -> "TalkingAnimal";
+    "Human" -> "SwimmerAnimal";
+
+  "Amphibian" [style=filled, fillcolor=gold]
+    "Amphibian" -> "Animal";
+    "Amphibian" -> "SwimmerAnimal";
+
+  "Mosquito" [style=filled, fillcolor=darkorange]
+    "Mosquito" -> "Insect";
+    "Mosquito" -> "Flyer";
+
+  "Dolphin" [style=filled, fillcolor=darkorange]
+    "Dolphin" -> "Mammal";
+    "Dolphin" -> "SwimmerAnimal";
+
+  "GrassHopper" [style=filled, fillcolor=darkorange]
+    "GrassHopper" -> "Insect";
+
+  "Animal" [style=filled, fillcolor=gold]
+
+  "Airplane" [style=filled, fillcolor=darkorange]
+    "Airplane" -> "Flyer";
+
+  "Flyer" [style=filled, fillcolor=cadetblue]
+}
